@@ -1,10 +1,10 @@
 <?php
-//Sorting Only Keys 
+
 $people = array(
     "Petar" => array(
         "physics" => 35,
+        "chemistry" => 39,
         "maths" => 30,
-        "chemistry" => 39
     ),
     "Yavor" => array(
         "physics" => 30,
@@ -22,6 +22,12 @@ $people = array(
         "chemistry" => 39
     )
 );
+
+var_dump($people);
+
+$keys = array_keys($people);
+$sorted = [];
+
 
 function insertion_sort($arr)
 {       
@@ -41,47 +47,9 @@ function insertion_sort($arr)
 }
 
 
-$keys = array_keys($people);
-$sorted = [];
-
 foreach (insertion_sort($keys) as $key) {
     $sorted[$key] = $people[$key];
 }
 
-var_dump($people);
-
-
-/*
-foreach($people as $key => $value){
-    
-   if (is_array($value)){
-       
-        $array = $value;
-        
-        foreach (insertion_sort($array) as $val) {
-            $sortedValues[$val] = $people[$val];
-        }
-    }
-}
-
 var_dump($sorted);
- 
- */
-
-//PRINTING
-/*
-$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
-
-foreach($age as $x=>$x_value)
-{
-    echo "Key=" . $x . ", Value=" . $x_value;
-    echo "<br>";
-}
-  */
 ?>
-             
-
-        
- 
-
-

@@ -1,8 +1,17 @@
 <?php
 
-include 'newjson.json';
+include 'test.php';
 
-var_dump(json_decode($json))
+
+Hello();
+
+
+$data = file_get_contents ("newjson.json");
+$json = json_decode($data, true);
+
+var_dump($json);
+
+
 $arr = array('2' => '5', '1' => '6', '3'=>'4');
 
 $people = array(

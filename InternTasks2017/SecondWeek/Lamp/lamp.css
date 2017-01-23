@@ -1,0 +1,68 @@
+body {
+    background: #464646;
+}
+/*
+.container {
+    width:100%;
+    position:relative;
+    top: 75px;
+    left: 100px;
+}
+
+img {
+    position: absolute;
+}
+
+#lampon {
+    z-index: 1;
+    transition: z-index 2s;
+}
+
+#lampoff {
+    z-index: 10;
+}
+
+
+input[value="off"]:checked ~ #lampoff {
+    z-index: 0;
+ }
+input[value="on"]:checked ~ #lampon {
+    z-index:10
+ }
+*/
+
+.container {
+    position: relative;
+    height: 281px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+#lampon, #lampoff {
+    position:absolute;
+    left:0;
+/*    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;*/   
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity:2;
+    }
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+#lampon {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}

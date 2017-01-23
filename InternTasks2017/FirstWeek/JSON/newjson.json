@@ -1,0 +1,33 @@
+{
+   "Petar" : 
+               {
+                "physics" : 35,
+                "chemistry" : 39,
+                "maths" : 30
+               }
+             ,
+        
+    "Yavor" : 
+                {
+                 "physics" : 30,
+                 "maths" : 32,
+                 "chemistry" : 29
+                }
+               ,
+       
+   "Zara" : 
+                {
+                  "physics" : 31,
+                  "maths" : 22,
+                  "chemistry" : 39
+                }
+             ,
+        
+    "Angel" : 
+                {
+                   "physics" : 31,
+                   "maths" : 22,
+                   "chemistry" : 39
+                }
+               
+}
